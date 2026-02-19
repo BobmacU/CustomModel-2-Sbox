@@ -48,10 +48,10 @@ import os
 bone_rename_table = {
 	# Core
 	"ValveBiped.Bip01_Pelvis": "pelvis",
-	# "ValveBiped.Bip01_Spine": "spine_0",
-	# "ValveBiped.Bip01_Spine1": "spine_1",
-	# "ValveBiped.Bip01_Spine2": "spine_1",
-	# "ValveBiped.Bip01_Spine4": "spine_2",
+	"ValveBiped.Bip01_Spine": "spine_0",
+	"ValveBiped.Bip01_Spine1": "spine_1",
+	"ValveBiped.Bip01_Spine2": "spine_1",
+	"ValveBiped.Bip01_Spine4": "spine_2",
 	"ValveBiped.Bip01_Neck1": "neck_0",
 	"ValveBiped.Bip01_Head1": "head",
 	"ValveBiped.Bip01_L_Eye": "eye_L",
@@ -63,7 +63,6 @@ bone_rename_table = {
 # ======================================================
 	"ValveBiped.Bip01_L_Clavicle": "clavicle_L",
 	"ValveBiped.Bip01_L_UpperArm": "arm_upper_L",
-	# "ValveBiped.Bip01_L_Trapezius": "", # shoulder twist bone
 	"ValveBiped.Bip01_L_Shoulder": "arm_upper_L_twist0",
 	"ValveBiped.Bip01_L_Forearm_Helperbone": "arm_upper_L_twist1",
 	"ValveBiped.Bip01_L_Bicep": "arm_upper_L_twist1",
@@ -71,7 +70,6 @@ bone_rename_table = {
 	"ValveBiped.Bip01_L_Forearm": "arm_lower_L",
 	"ValveBiped.Bip01_L_Hand_Helperbone": "arm_lower_L_twist1",
 	"ValveBiped.Bip01_L_Ulna": "arm_lower_L_twist1",
-	# "ValveBiped.Bip01_L_Wrist": "", # wrist twist bone
 	"ValveBiped.Bip01_L_Hand": "hand_L",
 	"ValveBiped.Bip01_L_Finger0": "finger_thumb_0_L",
 	"ValveBiped.Bip01_L_Finger01": "finger_thumb_1_L",
@@ -94,7 +92,6 @@ bone_rename_table = {
 	# Right arm
 	"ValveBiped.Bip01_R_Clavicle": "clavicle_R",
 	"ValveBiped.Bip01_R_UpperArm": "arm_upper_R",
-	# "ValveBiped.Bip01_R_Trapezius": "", # shoulder twist bone
 	"ValveBiped.Bip01_R_Shoulder": "arm_upper_R_twist0",
 	"ValveBiped.Bip01_R_Forearm_Helperbone": "arm_upper_R_twist1",
 	"ValveBiped.Bip01_R_Bicep": "arm_upper_R_twist1",
@@ -102,7 +99,6 @@ bone_rename_table = {
 	"ValveBiped.Bip01_R_Forearm": "arm_lower_R",
 	"ValveBiped.Bip01_R_Hand_Helperbone": "arm_lower_R_twist1",
 	"ValveBiped.Bip01_R_Ulna": "arm_lower_R_twist1",
-	# "ValveBiped.Bip01_R_Wrist": "", # wrist twist bone
 	"ValveBiped.Bip01_R_Hand": "hand_R",
 	"ValveBiped.Bip01_R_Finger0": "finger_thumb_0_R",
 	"ValveBiped.Bip01_R_Finger01": "finger_thumb_1_R",
