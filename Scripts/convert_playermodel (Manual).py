@@ -35,7 +35,7 @@
 
 # ======================================================
 # enable moving eyes
-EYES_ENABLED = True
+EYES_ENABLED = False
 
 # ======================================================
 # Import dependencies
@@ -47,82 +47,92 @@ import os
 # ======================================================
 bone_rename_table = {
     # Core
-    "Hips_02": "pelvis",
-    "Spine_02": "spine_0",
-    "Spine1_02": "spine_1",
-    "Spine2_02": "spine_2",
-    ":Neck": "neck_0",
+    "Hips": "pelvis",
+    "Spine": "spine_0",
+    "Spine1": "spine_1",
+    # "Spine2": "spine_2",
+    "Neck": "neck_0",
     "Head": "head",
-    "eye_L": "eye_L",
-    "eye_R": "eye_R",
+    # "Eye_L": "eye_L",
+    # "Eye_R": "eye_R",
 
     # Left arm
 # ======================================================
-    "LeftShoulder_02": "clavicle_L",
-    "LeftArm_02": "arm_upper_L",
-    "LeftForeArm_02": "arm_lower_L",
-    "LeftHand_02": "hand_L",
-    "LeftHandThumb1_02": "finger_thumb_0_L",
-    "LeftHandThumb2_02": "finger_thumb_1_L",
-    "LeftHandThumb3_02": "finger_thumb_2_L",
-    "LeftHandIndex1_02": "finger_index_0_L",
-    "LeftHandIndex2_02": "finger_index_1_L",
-    "LeftHandIndex3_02": "finger_index_2_L",
-    "LeftHandMiddle1_02": "finger_middle_0_L",
-    "LeftHandMiddle2_02": "finger_middle_1_L",
-    "LeftHandMiddle3_02": "finger_middle_2_L",
-    "LeftHandRing1_02": "finger_ring_0_L",
-    "LeftHandRing2_02": "finger_ring_1_L",
-    "LeftHandRing3_02": "finger_ring_2_L",
-    "LeftHandPinky1_02": "finger_pinky_0_L",
-    "LeftHandPinky2_02": "finger_pinky_1_L",
-    "LeftHandPinky3_02": "finger_pinky_2_L",
+    "LeftShoulder": "clavicle_L",
+    "LeftArm": "arm_upper_L",
+    "LeftForeArm": "arm_lower_L",
+    "LeftHand": "hand_L",
+    "LeftHandThumb1": "finger_thumb_0_L",
+    "LeftHandThumb2": "finger_thumb_1_L",
+    "LeftHandThumb3": "finger_thumb_2_L",
+    "LeftHandIndex1": "finger_index_0_L",
+    "LeftHandIndex2": "finger_index_1_L",
+    "LeftHandIndex3": "finger_index_2_L",
+    "LeftHandMiddle1": "finger_middle_0_L",
+    "LeftHandMiddle2": "finger_middle_1_L",
+    "LeftHandMiddle3": "finger_middle_2_L",
+    "LeftHandRing1": "finger_ring_0_L",
+    "LeftHandRing2": "finger_ring_1_L",
+    "LeftHandRing3": "finger_ring_2_L",
+    "LeftHandPinky1": "finger_pinky_0_L",
+    "LeftHandPinky2": "finger_pinky_1_L",
+    "LeftHandPinky3": "finger_pinky_2_L",
+
+	# "LeftHandIndex_Meta": "finger_index_meta_L",
+	# "LeftHandMiddle_Meta": "finger_middle_meta_L",
+	# "LeftHandRing_Meta": "finger_ring_meta_L",
+	# "LeftHandPinky_Meta": "finger_pinky_meta_L",
 
 # ======================================================
 
     # Right arm
-    "RightShoulder_02": "clavicle_R",
-    "RightArm_02": "arm_upper_R",
-    "RightForeArm_02": "arm_lower_R",
-    "RightHand_02": "hand_R",
-    "RightHandThumb1_02": "finger_thumb_0_R",
-    "RightHandThumb2_02": "finger_thumb_1_R",
-    "RightHandThumb3_02": "finger_thumb_2_R",
-    "RightHandIndex1_02": "finger_index_0_R",
-    "RightHandIndex2_02": "finger_index_1_R",
-    "RightHandIndex3_02": "finger_index_2_R",
-    "RightHandMiddle1_02": "finger_middle_0_R",
-    "RightHandMiddle2_02": "finger_middle_1_R",
-    "RightHandMiddle3_02": "finger_middle_2_R",
-    "RightHandRing1_02": "finger_ring_0_R",
-    "RightHandRing2_02": "finger_ring_1_R",
-    "RightHandRing3_02": "finger_ring_2_R",
-    "RightHandPinky1_02": "finger_pinky_0_R",
-    "RightHandPinky2_02": "finger_pinky_1_R",
-    "RightHandPinky3_02": "finger_pinky_2_R",
+    "RightShoulder": "clavicle_R",
+    "RightArm": "arm_upper_R",
+    "RightForeArm": "arm_lower_R",
+    "RightHand": "hand_R",
+    "RightHandThumb1": "finger_thumb_0_R",
+    "RightHandThumb2": "finger_thumb_1_R",
+    "RightHandThumb3": "finger_thumb_2_R",
+    "RightHandIndex1": "finger_index_0_R",
+    "RightHandIndex2": "finger_index_1_R",
+    "RightHandIndex3": "finger_index_2_R",
+    "RightHandMiddle1": "finger_middle_0_R",
+    "RightHandMiddle2": "finger_middle_1_R",
+    "RightHandMiddle3": "finger_middle_2_R",
+    "RightHandRing1": "finger_ring_0_R",
+    "RightHandRing2": "finger_ring_1_R",
+    "RightHandRing3": "finger_ring_2_R",
+    "RightHandPinky1": "finger_pinky_0_R",
+    "RightHandPinky2": "finger_pinky_1_R",
+    "RightHandPinky3": "finger_pinky_2_R",
+
+	# "RightHandIndex_Meta": "finger_index_meta_R",
+	# "RightHandMiddle_Meta": "finger_middle_meta_R",
+	# "RightHandRing_Meta": "finger_ring_meta_R",
+	# "RightHandPinky_Meta": "finger_pinky_meta_R",
 
 # ======================================================
 
     # Left leg
 # ======================================================
-    "LeftUpLeg_02": "leg_upper_L",
-    "LeftLeg_02": "leg_lower_L",
-    "LeftFoot_02": "ankle_L",
-    "LeftToeBase_02": "ball_L",
+    "LeftUpLeg": "leg_upper_L",
+    "LeftLeg": "leg_lower_L",
+    "LeftFoot": "ankle_L",
+    "LeftToeBase": "ball_L",
 
     # Right leg
-    "RightUpLeg_02": "leg_upper_R",
-    "RightLeg_02": "leg_lower_R",
-    "RightFoot_02": "ankle_R",
-    "RightToeBase_02": "ball_R",
+    "RightUpLeg": "leg_upper_R",
+    "RightLeg": "leg_lower_R",
+    "RightFoot": "ankle_R",
+    "RightToeBase": "ball_R",
 }
 # ======================================================
 	# Protected bones
 protected_bones = [
 	"root_IK",
 	"aim_matrix_01",
-	"aim_matrix_02a",
-	"aim_matrix_02b",
+	"aim_matrixa",
+	"aim_matrixb",
 	"foot_R_IK_target",
 	"foot_L_IK_target",
 	"hand_R_IK_attach",
